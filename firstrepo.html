@@ -1,23 +1,51 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-	<title>Listat</title>
+  <title>Listat</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      padding: 10px;
+    }
+    .grid-item1 {
+  grid-row: 1 / 4;
+}
+    </style>
 	<meta charset = "utf-8" />
 
 </head>
 	<body>
        <header>
-           <h1>Listatsadasdas lapidhje babik.</h1>
+        <nav id="mainav">
+            <ul>
+              <li><a href="#">Homepage</a></li>
+              <li><a href="#">Filmat</a></li>
+              <li><a href="#">Autoret</a></li>
+              <li><a href="#">Me te miret</a></li>
+              <li><a href="#">Me shume rreth ne</a></li>
+            </ul>   
+         </nav>   
+         </header>
+         <article id="main">
+             <div>
+                    <img src="images/profile-96x96.jpg" alt="Portrait"/>
+                    <img src="images/profile-96x96.jpg" alt="Portrait"/>
+                    <img src="images/profile-96x96.jpg" alt="Portrait"/>
+            </div>
+            <section>
+                <h4>Tekst i lire</h4>
+            </section>
+            <div class="grid-container">
+              <div class="grid-item1"><h3>Latest Projects</h3><p>Dicka poshte latest project</p></div>
+              <div class="grid-item">2</div>
+              <div class="grid-item">3</div>  
+              <div class="grid-item">4</div>
+              <div class="grid-item">5</div> 
+            </div>
+         </article>
 
-       </header>
        
-           <ul>
-               <li>Mercedes</li>
-               <li>Audi</li>
-               <li>BMW</li>
-               <li>TESLA</li>
-           </ul>
-      
 
-    </body>sss
+    </body>
 </html>
