@@ -1,0 +1,56 @@
+/* stilizimi i tekstit*/
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 100%;
+    background-color:white;
+}
+h2 {
+    font-size: 1.3em;
+}
+h3 {
+    font-size: 1.2em;
+    border-bottom: solid 1px #999999;
+    margin-bottom: 0.5em;
+}
+nav#mainav {
+    background-color: #fff;
+    font-size: 0.8em;
+}
+nav#mainav ul li {
+    list-style: none;
+    display: inline;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "mainbox box1 box2 box3" 
+                         "mainbox box4 box5 box6";
+    align-content: center;
+  }
+  .grid-item1 {
+    grid-column: 1;
+    grid-row: 1 / span 4; /* kqyre edhe niher */
+}
+#mainbox {
+    grid-area: mainbox;
+}
+#box1 {
+    grid-area: box1;
+}
+#box2 {
+    grid-area: box2;
+}
+#box3 {
+    grid-area: box3;
+}
+#box4 {
+    grid-area: box4;
+}
+#box5 {
+    grid-area: box5;
+}
+#box6 {
+    grid-area: box6;
+}

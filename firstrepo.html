@@ -1,51 +1,65 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/stilizimi.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
   <title>Listat</title>
   <style>
-    .grid-container {
-      display: grid;
-      grid-template-columns: auto auto auto auto;
-      padding: 10px;
-    }
-    .grid-item1 {
-  grid-row: 1 / 4;
-}
+
     </style>
 	<meta charset = "utf-8" />
 
 </head>
 	<body>
        <header>
+          <div class="topnav">
+              <ul class="nospace">
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">RSS Feeds</a></li>
+                <li><a href="#">Archives</a></li>
+              </ul>
+            </div>
+            <form action="" class="search_box">
+              <input type="text" class="input_box" name="searchbar" placeholder="Search">
+                  <i class="fas fa-chevron-circle-right"></i>
+            </form>
         <nav id="mainav">
             <ul>
               <li><a href="#">Homepage</a></li>
               <li><a href="#">Filmat</a></li>
               <li><a href="#">Autoret</a></li>
-              <li><a href="#">Me te miret</a></li>
+              <li><a href="#">Me te miret</a>
+                <ul class="dropdown">
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="#">Full Width</a></li>
+                  <li><a href="#">Sidebar Left</a></li>
+                  <li><a href="#">Sidebar Right</a></li>
+                  <li><a href="#">Basic Grid</a></li>
+                </ul>
+              </li>
               <li><a href="#">Me shume rreth ne</a></li>
             </ul>   
          </nav>   
          </header>
          <article id="main">
-             <div>
+             <div class="fig1">
                     <img src="images/profile-96x96.jpg" alt="Portrait"/>
                     <img src="images/profile-96x96.jpg" alt="Portrait"/>
                     <img src="images/profile-96x96.jpg" alt="Portrait"/>
             </div>
-            <section>
-                <h4>Tekst i lire</h4>
-            </section>
+            <div class ="fade_rule">Dicka ne mes te fade rule</div>
+            <div class ="fade_rule"></div>
             <div class="grid-container">
-              <div class="grid-item1"><h3>Latest Projects</h3><p>Dicka poshte latest project</p></div>
-              <div class="grid-item">2</div>
-              <div class="grid-item">3</div>  
-              <div class="grid-item">4</div>
-              <div class="grid-item">5</div> 
+              <div class="grid-item1" id="mainbox"><h3>Latest Projects</h3><p>Dicka poshte latest project</p></div>
+              <div class="grid-item" id="box1"><img src="images/profile-96x96.jpg" alt="Portrait"/></div>
+              <div class="grid-item" id="box2"><img src="images/profile-96x96.jpg" alt="Portrait"/></div>  
+              <div class="grid-item" id="box3"><img src="images/profile-96x96.jpg" alt="Portrait"/></div>
+              <div class="grid-item" id="box4"><img src="images/profile-96x96.jpg" alt="Portrait"/></div> 
+              <div class="grid-item" id="box5"><img src="images/profile-96x96.jpg" alt="Portrait"/></div> 
+              <div class="grid-item" id="box6"><img src="images/profile-96x96.jpg" alt="Portrait"/></div> 
             </div>
          </article>
-
-       
-
     </body>
 </html>
