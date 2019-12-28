@@ -1,0 +1,104 @@
+/*Stilizimi i pergjitshem i tekstit*/
+h1, h2, h3, nav, footer
+{
+    font-family: "Trebuchet MS", Tahoma,  sans-serif;
+    font-size: 200%;
+  
+}
+body
+{
+    font-family: Georgia, sans-serif;
+    font-size: 100%;
+<<<<<<< HEAD
+    background-color: rgb(139, 135, 135);
+}
+p
+{
+  font-size: 16px;
+=======
+    background-color:white;
+>>>>>>> 0239f26936c66249620aae7a4d4b3cba75ffa2f6
+}
+/*Stilizimi i header dhe footer*/
+header, footer
+{
+  color: black;
+  background-color: antiquewhite;
+  margin: 0em 4em 0.25em 4em;
+}
+header h1
+{
+    padding: 0.5em 0 0 1.25em;
+    font-size: 2em;
+    font-weight: bold;
+}
+header p
+{
+    font-size: 1.1em;
+    font-style: italic;
+    margin-bottom: 1em;
+    padding: 0 0 0 1.25em;
+}
+header nav ul li
+{
+    list-style: none;
+    display: inline;
+    text-decoration: none;
+}
+/*stilizimi i pjeses kryesore te faqes*/
+main
+{
+    background-color: antiquewhite;
+    margin: 1em 4em 1em 4em;
+    padding: 7em;
+}
+section 
+{
+    margin-bottom: 1em;
+    padding: 7em;
+    border: solid 1px #C5CAE9;
+    width: 700px;
+}
+p
+{
+    margin: 0 0 0.5em 0;
+}
+ul
+{
+    list-style-type: square;
+}
+/*stilizimi i figures*/
+figure
+{
+    margin: 0;
+}
+figure img
+{
+    margin: 0;
+    padding: 0;
+}
+/*stilizimi i linqeve*/
+a:link
+{
+    font-weight: bold;
+    color: rgb(114, 60, 161);
+}
+a:visited
+{
+    color: rgb(124, 48, 168);
+}
+a:hover
+{
+    color: white;
+    background-color: #be3131;
+}
+footer
+{
+    padding: 0.3em;
+    font-size: 1.5em;
+}
+footer p
+{
+    font-size: 0.6em;
+    font-style: italic;
+}
