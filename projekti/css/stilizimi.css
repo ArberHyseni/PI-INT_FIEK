@@ -9,15 +9,11 @@ body
 {
     font-family: Georgia, sans-serif;
     font-size: 100%;
-<<<<<<< HEAD
     background-color: rgb(139, 135, 135);
 }
 p
 {
   font-size: 16px;
-=======
-    background-color:white;
->>>>>>> 0239f26936c66249620aae7a4d4b3cba75ffa2f6
 }
 /*Stilizimi i header dhe footer*/
 header, footer
@@ -56,7 +52,7 @@ section
 {
     margin-bottom: 1em;
     padding: 7em;
-    border: solid 1px #C5CAE9;
+    border: solid 2px rgb(128, 131, 150);
     width: 700px;
 }
 p

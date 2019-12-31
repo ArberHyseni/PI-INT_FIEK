@@ -3,35 +3,52 @@
     <head>
         <meta charset="utf-8">
         <title>Top 18 faktet per filma</title>
+      
         <link rel="stylesheet" href="C:\Users\hp\Desktop\schlechterepo\projekti\css\reset.css">
         <link rel="stylesheet" href="C:\Users\hp\Desktop\schlechterepo\projekti\css\stilizimi.css">
+      
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="jquery-1.11.2.min.js"></script>
-        <script>
+      
+<script>
         $(function(){
-
-$("button").click(function(){
-  $("h1").hide();
+    $("button").click(function(){
+    $("figure").hide();
+    });
 });
-        });
 </script>
-<script src="jquery-1.11.2.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#btn2").click(function(){
+    alert("HTML: " + $("#test").html());
+  });
+        $("#btnhtml").click(function(){
+    $("#test2").html("<h1>Tetëmbëdhjetë fakte që nuk i dini për filmat e famshëm (Foto)</h1>");
+  });
+});
+</script>
+    
     </head>
     <body>
         <header>
             <h1>Tetëmbëdhjetë fakte që nuk i dini për filmat e famshëm (Foto)</h1>
+            <p id="test2">Titulli</p>
             <p>TV/Filmat</p>
         </header>
         <main>
             <section>
+                <button id="btnhtml">Vendos HTML</button>
+                
                 <figure>
                     <a href="C:\Users\hp\Desktop\schlechterepo\projekti\images/it3-780x439.jpg">
                     <img src="C:\Users\hp\Desktop\schlechterepo\projekti\images/it3-780x439.jpg" width="700px"></a>
                 </figure>
-                <button>Fsheh heading</button>
-                <p><b>Pa marrë parasysh se sa i tmerrshëm është filmi, ajo që shihni në<br> 
+                <button>Fsheh figurat</button>
+                <p id="test"><b>Pa marrë parasysh se sa i tmerrshëm është filmi, ajo që shihni në<br> 
                    ekran nuk është gjithmonë më mirë se ajo që mbeti prapa <br>
                    skenave. Industria e filmit është shumë interesante!</b></p>
+                   <button id="btn2">Trego HTML</button>
                 <p>Bright Side bëri një listë prej 18 fakteve pak të njohura rreth<br>
                    filmave popullorë që janë shumë interesante për të lexuar.</p>
             </section>
