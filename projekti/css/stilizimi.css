@@ -77,11 +77,11 @@ figure img
 a:link
 {
     font-weight: bold;
-    color: rgb(114, 60, 161);
+    color: #f8965e;
 }
 a:visited
 {
-    color: rgb(124, 48, 168);
+    color: #f8965e;
 }
 a:hover
 {
