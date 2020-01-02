@@ -5,95 +5,96 @@
     <link rel="stylesheet" href="css/stilizimi.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
   <title>Listat</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <style>
-<<<<<<< HEAD
-
-=======
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-    }
-    li {
-  float: right;
-  text-emphasis: red;
-}
-
-li a {
-  display: block;
-  color:black;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
-
-    .grid-container {
-      display: grid;
-      grid-template-columns: auto auto auto auto;
-      padding: 10px;
-    }
-
-    .grid-item1 {
-  grid-row: 1 / 4;
-}
->>>>>>> 5e02b17714e811078d292e012c711b1f6c00b6ed
-    </style>
 	<meta charset = "utf-8" />
-
 </head>
 	<body>
        <header>
-          <div class="topnav">
-              <ul class="nospace">
-                <li><a href="#">Sign Up</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">RSS Feeds</a></li>
-                <li><a href="#">Archives</a></li>
-              </ul>
-            </div>
-            <form action="" class="search_box">
-              <input type="text" class="input_box" name="searchbar" placeholder="Search">
-                  <i class="fas fa-chevron-circle-right"></i>
+          <nav id="topnav">
+              <ul>
+                <li><a href="#">Sign Up |</a></li>
+                <li><a href="#">Login |</a></li>
+                <li><a href="#">RSS Feeds |</a></li>
+                <li><a href="#">Archives </a></li>
+              <input type="text" class="input_box" name="searchbar">
+            <i class="fas fa-chevron-circle-right"></i>
             </form>
-        <nav id="mainav">
-          
-            <ul>
-              <li><a href="#">Homepage</a></li>
-              <li><a href="#">Filmat</a></li>
-              <li><a href="#">Autoret</a></li>
-              <li><a href="#">Me te miret</a>
-                <ul class="dropdown">
-                  <li><a href="#">Gallery</a></li>
-                  <li><a href="#">Full Width</a></li>
-                  <li><a href="#">Sidebar Left</a></li>
-                  <li><a href="#">Sidebar Right</a></li>
-                  <li><a href="#">Basic Grid</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Me shume rreth ne</a></li>
-            </ul>   
-        
-         </nav>   
+          </nav>
+          <div class="navbar">
+            <a href="#">Faqja Kryesore</a>
+            <a href="#">Filmat</a>
+            <a href="#">Autoret</a>
+          <div class="dropdown">
+              <button class="dropbtn">Me te miret
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Diqka</a>
+                <a href="#">Diqka 2</a>
+                <a href="#">Diqka 3</a>
+              </div>
+            </div> 
+            <a>Rreth ne</a>
+          </div>   
          </header>
          <article id="main">
              <div class="fig1">
-                    <img src="images/profile-96x96.jpg" alt="Portrait"/>
-                    <img src="images/profile-96x96.jpg" alt="Portrait"/>
-                    <img src="images/profile-96x96.jpg" alt="Portrait"/>
+                    <img src="img/main/mafiaMAIN.jpg" alt="Portrait" class="figmain1">
+                    <img src="img/main/MAIN1.jpg" alt="Portrait" class="figmain2">
+                    <img src="img/main/titanicMAIN.jpg" alt="Portrait" class="figmain3">
+                    <p><br><br><br><br><br></p>
             </div>
-            <div class ="fade_rule">Dicka ne mes te fade rule</div>
-            <div class ="fade_rule"></div>
-            <div class="grid-container">
-              <div class="grid-item1" id="mainbox"><h3>Latest Projects</h3><p>Dicka poshte latest project</p></div>
-              <div class="grid-item" id="box1"><img src="images/profile-96x96.jpg" alt="Portrait"/></div>
-              <div class="grid-item" id="box2"><img src="images/profile-96x96.jpg" alt="Portrait"/></div>  
-              <div class="grid-item" id="box3"><img src="images/profile-96x96.jpg" alt="Portrait"/></div>
-              <div class="grid-item" id="box4"><img src="images/profile-96x96.jpg" alt="Portrait"/></div> 
-              <div class="grid-item" id="box5"><img src="images/profile-96x96.jpg" alt="Portrait"/></div> 
-              <div class="grid-item" id="box6"><img src="images/profile-96x96.jpg" alt="Portrait"/></div> 
-            </div>
+            <br><br><br>
          </article>
+         <section>
+            <div class="fade_rule"><p><i>Ketu do t'i gjeni filmat me te mire qe kane ekzistuar ndonjehere.</i></p></div>  
+            <br><br><br>
+            <div class="fade_rule"></div>
+            <br><br><br>
+
+            <figure>
+            <div class="grid-container">
+              <div class="grid-item1" id="mainbox"><h3>Latest Projects</h3><p>Angleso it va semblar un simplificat Angles,
+                 quam un skeptic Cambridge amico dit me que Occidental es.
+                 Li Europan lingues es membres del sam familie.
+                 Lor separat existentie es un myth. 
+                 Por scientie, musica, sport etc, litot Europa usa li sam vocabular.
+                 Li lingues differe solmen in li grammatica, 
+                 li pronunciation e li plu commun vocabules</p></div>
+              <div  id="box1"><img class= "shadow"src="img/Schindlers.jpg" alt="Portrait"/><p><br>Dicka</p><br><a id="fotot" href="">Kliko per me shume ></a></div>
+              <div id="box2"><img class= "shadow" src="img/shawreduce.jpg" alt="Portrait"/><p><br>Dicka</p><br><a id="fotot" href="">Kliko per me shume ></a></div>  
+              <div id="box3"><img class= "shadow" src="img/pianistreduce.jpg" alt="Portrait"/><p><br>Dicka</p><br><a id="fotot" href="">Kliko per me shume ></a></div>
+              <div id="box4"><img class= "shadow" src="img/matrixreduce.jpg" alt="Portrait"/><p><br>Dicka</p><br><a id="fotot" href="">Kliko per me shume ></a></div> 
+              <div id="box5"><img class= "shadow" src="img/batman.jpg" alt="Portrait"/><p><br>Dicka</p><br><a id="fotot" href="">Kliko per me shume ></a></div> 
+              <div id="box6"><img class= "shadow" src="img/avengersreduce.jpg" alt="Portrait"/><p><br>Dicka</p><br><a id="fotot" href="">Kliko per me shume ></a></div> 
+            </div>
+          </figure>
+          </section>
+         <footer>
+          <div class="about">
+            <h1>About Us</h1>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+            <h3>&copy XLearn.</h3>
+            <h3>All rights reserved</h3>
+          </div>
+          <div class="contact">
+            <h1>Contact Us</h1>
+            <p>10000 Prishtine</p>
+            <p>+383 44/49 xxx xxx</p>
+            <p>info@xlearn.com</p>
+            <h1>Connect with us</h1>
+            <p>Learn more <a href="#"><span>here</span></a></p>
+          </div>
+          <div class="twitter">
+            <h1>Latest</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+              Aenean commodo ligula eget dolor. Aenean massa. 
+              Cum sociis natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, 
+              vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, 
+              venenatis vitae, justo.
+              Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
+          </div>
+        </footer>
     </body>
 </html>
