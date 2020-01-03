@@ -161,7 +161,8 @@ div.gallery {
   }
 
   div.gallery img:hover {
-    box-shadow: 2px 2px 2px  2px orangered;
+    box-shadow:0 0 40px orangered;
+
   }
   
   div.desc {
