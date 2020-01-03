@@ -71,7 +71,7 @@ ul li:hover ul
     top: 14%;
     transform: translate(-50%,-50%);
     background-color: orangered;
-    height: 22px;
+    height: 45px;
     border-radius: 40px;
     padding: 10px; 
 }
@@ -142,6 +142,7 @@ header
 div
 {
     background-color: black;
+   
 }
 
 
@@ -203,6 +204,43 @@ div.gallery {
       width: 100%;
     }
   }
-  
- 
 
+
+  .segment-three a
+  {
+     background-color: red;
+     width: 40px;
+     height: 40px;
+     display: inline-block;
+     border-radius: 50%;
+
+  }
+
+  .segment-three a i 
+  {
+      font-size: 20px;
+      padding: 10px 12px;
+      color: seashell;
+  }
+
+  footer 
+  {
+      width: 100%;
+      background-color:rgb(39, 37, 37);
+      padding: 20px;
+      color: white;
+      display: inline-block;
+      text-align: center;
+      border-top: 1px solid grey;
+    
+
+  }
+
+
+
+
+  
+  
+  
+
+ 
