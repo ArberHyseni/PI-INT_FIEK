@@ -3,7 +3,6 @@ h1, h2, h3, nav, footer
 {
     font-family: "Trebuchet MS", Tahoma,  sans-serif;
     font-size: 200%;
-  
 }
 body
 {
@@ -46,12 +45,12 @@ main
 {
     background-color: antiquewhite;
     margin: 1em 4em 1em 4em;
-    padding: 7em;
+    padding: 1em 8.5em 1em 8.5em;
 }
 section 
 {
-    margin-bottom: 1em;
-    padding: 7em;
+    margin-bottom: 0.5em;
+    padding: 1em 5em 1em 5em;
     border: solid 2px rgb(128, 131, 150);
     width: 700px;
 }
