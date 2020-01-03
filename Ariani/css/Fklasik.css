@@ -31,17 +31,25 @@ header, footer
   border: 7px solid rgb(92, 78, 38);
   border-radius: 20px;
  }
- table, th, td {
-  border: 6px solid white;
-  margin-left: 75px;
+ table, th, tr {
+
+  border: 5px solid black;
+  margin-left: 50px;
+  background-color: black ;
+   
+  
+  
+}
+td{
+  margin-right: 30%;
+  background-color: black;
+  
   
 }
 p{
-  border-left: 6px solid #7B4D45;
-  background-color: rgb(218, 214, 160);
-  font-size:5px;
-  border: 2px solid rgb(218, 214, 160);
-  border-radius:5px;
+ 
+  color:white;
+  
 }
 .clasa{
   width:200px;
@@ -98,15 +106,42 @@ h4{
   width:300px;
 }
 h2{
-  background: white;
+  font-weight: bold;
+  color:#ffffff;
   width:200px;
 }
 div{
   width: 200px;
   height: 400px;
-  background-color: rgb(170, 178, 182);
+  background-color: black;
   border: 1px solid black;
 }
+img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50); 
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #111010;
+  min-width: 350px;
+
+  box-shadow: 30px 50px 70px 90px rgba(3, 7, 231, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
 
 
 
