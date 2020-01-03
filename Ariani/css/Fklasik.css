@@ -9,7 +9,7 @@ body
 {
     font-family: Georgia, sans-serif;
     font-size: 100%;
-    background-image: url("Camera.png");
+    background-image: url("231f.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,7 +32,7 @@ header, footer
   border-radius: 20px;
  }
  table, th, td {
-  border: 6px solid black;
+  border: 6px solid white;
   margin-left: 75px;
   
 }
@@ -58,7 +58,9 @@ p{
       background-image:url("Camera.png");
       background-repeat: no-repeat;
       
-     
+      -ms-transform: skew(20deg); 
+      -webkit-transform: skew(20deg); 
+      transform: skew(5deg); 
    
   
 }
@@ -95,4 +97,16 @@ h4{
 .Div :hover{
   width:300px;
 }
+h2{
+  background: white;
+  width:200px;
+}
+div{
+  width: 200px;
+  height: 400px;
+  background-color: rgb(170, 178, 182);
+  border: 1px solid black;
+}
+
+
 
