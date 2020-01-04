@@ -19,7 +19,7 @@ body
 header, footer
 {
   color: black;
-  background-color: white;
+  background-color: rgb(100, 100, 236);
   margin: 0em 4em 0.25em 4em;
  
 }
@@ -28,7 +28,7 @@ header, footer
   color:#5275D0;
   font-size: 100%;
   width:200px;
-  border: 7px solid rgb(92, 78, 38);
+  border: 7px solid black;
   border-radius: 20px;
  }
  table, th, tr {
@@ -58,10 +58,10 @@ p{
 }
 
 .Teli {
-    height: 600px;
+    height: 730px;
     width: 1200px;
     padding: 25px;
-    border: 5px solid  rgb(218, 214, 160) ;
+    border: 5px solid  black ;
     margin: 0;
       background-image:url("Camera.png");
       background-repeat: no-repeat;
@@ -72,15 +72,9 @@ p{
    
   
 }
-.Emini{
-  width: 150px;
-  padding: 10px;
-  border: 2px solid  rgb(218, 214, 160) ;
-  margin: 1px;
-
+.Tel{
+  width:200px;
 }
-
-
 
 .Div{
   width: 100px;
@@ -94,14 +88,14 @@ p{
 }
 h2{
   font-weight: bold;
-  color:#ffffff;
+  color:white;
   width:200px;
 }
 div{
   width: 200px;
   height: 400px;
-  background-color: black;
-  border: 1px solid black;
+  background-color: none;
+  border: 0px solid black;
 }
 img:hover {
   opacity: 0.5;
@@ -171,7 +165,6 @@ input[type=text] {
   border-radius: 4px;
   font-size: 16px;
   background-color: white;
-  background-image: url('searchicon.png');
   background-position: 10px 10px; 
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
@@ -182,11 +175,64 @@ input[type=text]:focus {
   width: 180%;
 }
 .Tabela{
-  height: 90px;
+  height: 10px;
   margin-left:850px;
   margin-top:100px;
 }
+.center {
+  margin-left: 35%;
+  height: 100px;
+  width:60%;
+  
+  
+}
+
+.pagination {
+  text-align: center;
+  display: inline-block;
+  height: 70px;
+  width:60%;
+  
+  
+}
+
+.pagination a {
+  color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition:  .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+  
+  
+}
+
+.pagination a.active {
+  background-color: rgb(6, 2, 241);
+  color: white;
+  border: 1px solid rgb(26, 10, 247);
+  
+}
+
+.pagination a:hover:not(.active)
+ {background-color: white;  }
 
 
+ .H2{
+   width:400px;
+ }
+ a:visited {
+  color: white;
+}
 
+
+a:hover {
+  color: white;
+}
+
+
+a:active {
+  color: white;
+}
 
