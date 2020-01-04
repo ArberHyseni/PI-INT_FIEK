@@ -9,14 +9,14 @@ body
 {
     font-family: Georgia, sans-serif;
     font-size: 100%;
-    background-image: url("231f.jpg");
+    background-image: url("photo.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   
 }
-header, footer
+header
 {
   color: black;
   background-color: rgb(100, 100, 236);
@@ -58,17 +58,17 @@ p{
 }
 
 .Teli {
-    height: 1000px;
-    width: 1200px;
+  margin-left:50px;
+    height: 1300px;
+    width: 1150px;
     padding: 25px;
     border: 5px solid  black ;
-    margin: 0;
       background-image:url("Camera.png");
       background-repeat: no-repeat;
       
       -ms-transform: skew(20deg); 
       -webkit-transform: skew(20deg); 
-      transform: skew(5deg); 
+      transform: skew(0deg); 
    
   
 }
@@ -236,15 +236,75 @@ a:active {
   color: white;
 }
 .V{
-  color:blue;
+  color:white;
   text-align: center;
-  
+  margin-left:130px;
 
 }
 .B{
   background: blue;
+  margin-left:120px;
+  width: 90%;
   
 }
 .VI{
-  border: 2px solid blue;
+  border: 7px solid blue;
+}
+img {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 200%; 
+  }
+
+  65% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+
+
+.square {
+  background: blue;
+  border-radius: 5px;
+  height: 250px;
+  margin-left: 850px;
+  margin-bottom:500px;
+  transition: transform 1s;
+  width: 250px;
+  margin-bottom: 50%;
+}
+.square:hover {
+  transform: scale(2);
+}
+.K{
+   border: 0px solid black;
+
+}
+footer 
+  {
+      width: 100%;
+      background-color:rgb(39, 37, 37);
+      padding: 20px;
+      color: white;
+      display: inline-block;
+      text-align: center;
+      border-top: 3px solid grey;
+      background: rgb(130, 130, 243);
+
+  }
+.c{
+  margin-left:50px;
 }
