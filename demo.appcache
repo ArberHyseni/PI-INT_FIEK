@@ -1,0 +1,10 @@
+CACHE MANIFEST
+#DATE 2020-01-01
+CACHE:
+css/stilizimi.css
+
+NETWORK:
+*
+
+FALLBACK:
+offline.html
