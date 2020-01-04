@@ -6,7 +6,7 @@ body
 }
 
 
-h1
+.h1
 {
     
     font-family: "Times New Roman", serif;
@@ -234,7 +234,10 @@ div.gallery {
       display: inline-block;
       text-align: center;
       border-top: 1px solid grey;
-    
+  }
+
+      
+  
 
  
 
