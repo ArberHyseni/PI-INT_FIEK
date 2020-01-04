@@ -58,7 +58,7 @@ p{
 }
 
 .Teli {
-    height: 730px;
+    height: 1000px;
     width: 1200px;
     padding: 25px;
     border: 5px solid  black ;
@@ -235,4 +235,16 @@ a:hover {
 a:active {
   color: white;
 }
+.V{
+  color:blue;
+  text-align: center;
+  
 
+}
+.B{
+  background: blue;
+  
+}
+.VI{
+  border: 2px solid blue;
+}
