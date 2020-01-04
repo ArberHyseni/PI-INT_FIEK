@@ -9,7 +9,7 @@ body
 {
     font-family: Georgia, sans-serif;
     font-size: 100%;
-    background-image: url("231f.jpg");
+    background-image: url("fotoo2.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,7 +19,7 @@ body
 header, footer
 {
   text-align: center;
-  color: black;
+  color: wheat;
   background-color: #fff;
   margin: 0em 4em 0.25em 4em;
   margin-top:400%;
@@ -63,18 +63,17 @@ p{
 }
 
 .Teli {
-    height: 1000px;
-    width: 1200px;
+    height: 1350px;
+    width: 1130px;
     padding: 25px;
     border: 5px solid  black ;
     margin: 0;
-      background-image:url("Camera.png");
-      background-repeat: no-repeat;
-      
-      -ms-transform: skew(20deg); 
-      -webkit-transform: skew(20deg); 
-      transform: skew(5deg); 
-   
+    background-image:url("123");
+    background-repeat: no-repeat;
+    -ms-transform: skew(20deg); 
+    -webkit-transform: skew(20deg); 
+     transform: skew(0deg); 
+   margin-left:40px;
   
 }
 .Tel{
@@ -89,7 +88,7 @@ p{
   width: 100px;
   height: 100px;
   background: red;
-  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  -webkit-transition: width 2s; 
   transition: width 2s;
 }
 .Div :hover{
@@ -245,7 +244,6 @@ a:active {
   color: white;
 }
 .V{
-<<<<<<< HEAD
   width:400px;
   font-size:130%;
   color:white;
@@ -325,17 +323,10 @@ footer
 }
 
 
-=======
-  color:blue;
-  text-align: center;
+  .IMG{
+    margin-left:370px;
+    width: 40%;
+    
+    border:0px solid white;
+  }
   
-
-}
-.B{
-  background: blue;
-  
-}
-.VI{
-  border: 2px solid blue;
-}
->>>>>>> 462157bb0cdeb1a0a28cfe2a7e6fd698cc25d8d2
