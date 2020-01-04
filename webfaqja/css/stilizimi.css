@@ -44,6 +44,8 @@ ul li a
 ul li a:hover
 {
     color: red;
+    transition: 2s;
+    -webkit-transform: rotate(360deg);
     
 }
 
