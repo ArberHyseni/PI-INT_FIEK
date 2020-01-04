@@ -9,14 +9,14 @@ body
 {
     font-family: Georgia, sans-serif;
     font-size: 100%;
-    background-image: url("photo.jpg");
+    background-image: url("231f.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   
 }
-header
+header, footer
 {
   text-align: center;
   color: black;
@@ -63,17 +63,17 @@ p{
 }
 
 .Teli {
-  margin-left:50px;
-    height: 1300px;
-    width: 1150px;
+    height: 1000px;
+    width: 1200px;
     padding: 25px;
     border: 5px solid  black ;
+    margin: 0;
       background-image:url("Camera.png");
       background-repeat: no-repeat;
       
       -ms-transform: skew(20deg); 
       -webkit-transform: skew(20deg); 
-      transform: skew(0deg); 
+      transform: skew(5deg); 
    
   
 }
@@ -245,6 +245,7 @@ a:active {
   color: white;
 }
 .V{
+<<<<<<< HEAD
   width:400px;
   font-size:130%;
   color:white;
@@ -324,3 +325,17 @@ footer
 }
 
 
+=======
+  color:blue;
+  text-align: center;
+  
+
+}
+.B{
+  background: blue;
+  
+}
+.VI{
+  border: 2px solid blue;
+}
+>>>>>>> 462157bb0cdeb1a0a28cfe2a7e6fd698cc25d8d2

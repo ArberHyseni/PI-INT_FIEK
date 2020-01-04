@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="css/stilizimi.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Kategorite</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <meta charset="UTF-8">
         <style>
             .pos 
@@ -19,9 +20,27 @@
             }
         </style>
     </head>
+
     <body>
+
         <header>
-        <h1>MIRE SE ERDHET NE BOTEN E FILMAVE</h1>
+
+        <h1 id="h1">MIRE SE ERDHET NE BOTEN E FILMAVE</h1>
+        <script>
+
+$(function() {
+      $("#h1").hide(3000).show(3000);
+    });
+
+    
+
+        $(function() {
+          $("#fade").on('click', function() {
+            $("#fade").fadeOut(200).fadeIn(200);
+          });
+        });
+        
+        </script>
 <nav>
 
     <div class="search-box">
@@ -32,11 +51,11 @@
     </div>
 
     <ul class="pos">
-     <li><a href="#te tjera">TE TJERA</a>
+     <li><a href="#tetjera" >TE TJERA</a>
     <ul>
-        <li><a href="#animuar">ARGETOHU</a></li>
-        <li><a href="#dokumentar">LUAJ</a></li>
-        <li><a href="#fantashkence">ANIMACIONE</a></li>
+        <li><a href="C:\Users\hp\Desktop\schlechterepo\webfaqja\efektet.html" target="_blank">ARGETOHU</a></li>
+        <li><a href="#luaj">LUAJ</a></li>
+        <li><a href="#animacione">ANIMACIONE</a></li>
     </ul></li>
      <li><a href="#komedi">KOMEDI</a></li>
      <li><a href="#drame">DRAME</a></li>
@@ -48,8 +67,9 @@
 </header>
 
 
-<h3 id="aksion" class="h3">FILMAT AKSION</h3>
-<div class="responsive">
+<h3 id="fade" class="h3">FILMAT AKSION</h3>
+
+<div id="aksion" class="responsive">
     <div class="gallery">
       <a target="_blank" href="images\1.jpg">
         <img src="images\1.jpg" width="300" height="200">
@@ -425,13 +445,25 @@
 </div>
 </div>
 
-<footer>
+<footer id="footeri">
+  <script>
+
+$(function() {
+          $('#footeri').on('mouseover', function() {
+            $('#footeri').slideToggle(5000).slideToggle(5000);
+          });
+        });
+    
+    </script>
     <section class="footer-top">        
                 <section class="col-md-3 col-sm-6 col-xs-12 segment-three">
                     <p>
                         Na ndiqni ne rrjetet sociale
                     </p>
-                     <img src="Facebook.png"/>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
                     <p>Copyright &copy; - G22 Projekti n&euml; Internet</p>
                 </section>
                 </section>

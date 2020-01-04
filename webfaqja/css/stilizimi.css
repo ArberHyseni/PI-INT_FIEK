@@ -31,7 +31,7 @@ ul li
     float: right;
 }
 
-ul ,li ,a
+ul li a
 {
     text-decoration: none;
     color: white;
@@ -41,7 +41,13 @@ ul ,li ,a
 
 }
 
-
+ul li a:hover
+{
+    color: red;
+    transition: 2s;
+    -webkit-transform: rotate(360deg);
+    
+}
 
 ul li ul
 {
@@ -230,12 +236,7 @@ div.gallery {
       border-top: 1px solid grey;
     
 
-  }
-  .Ha{
-    margin-right: 30px;
-    
-  }
-
+ 
 
 
 
