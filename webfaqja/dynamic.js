@@ -15,7 +15,7 @@ $(document).ready(function(){
 
 
 
-
+//Loja-fillimi
   var myGamePiece;
 
 function startGame() {
@@ -77,5 +77,29 @@ function moveright() {
     myGamePiece.speedX += 1; 
 }
 
+//Loja-mbarimi
 
+
+
+
+//Gjetja e gabimeve
+function myFunction() {
+    var mesazhi, x;
+    mesazhi = document.getElementById("p01");
+    mesazhi.innerHTML = "";
+    x = document.getElementById("demo").value;
+    try { 
+      if(x == "")  throw "Hyrje e zbrazet";
+      if(isNaN(x)) throw "Hyrje jo-numer";
+      x = Math.sqrt(Number(x));
+      if(x < 2)  throw "Hyrje pertej kufirit te poshtem";
+      if(x > 5)   throw "Hyrje pertej kufirit te eperm";
+      throw "Rrenja katrore eshte "+x;
+    }
+    catch(err) {
+      mesazhi.innerHTML =  err;
+    }
+  }
+  
+  
 
