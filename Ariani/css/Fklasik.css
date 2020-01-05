@@ -19,10 +19,12 @@ body
 header, footer
 {
   text-align: center;
-  color: wheat;
-  background-color: #fff;
-  margin: 0em 4em 0.25em 4em;
-  margin-top:400%;
+  color: #f3f3f3;
+  background-color: #FAFAFA;
+  margin: 0em 1em 0.25em 9em;
+  margin-top:300%;
+  width: 70%;
+  
  
 }
 .Seri{
