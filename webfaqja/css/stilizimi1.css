@@ -7,9 +7,15 @@ h1
     color:rgb(248, 16, 16);
     font-size: 40px;
     padding-top: 30px;
-
 }
 
+canvas {
+  border:1px solid #d3d3d3;
+  background-color:rgb(214, 208, 208);
+  margin: 20px;
+  float: right;
+
+}
 
 
 
@@ -118,6 +124,7 @@ footer
     width: 100%;
     background-color:rgb(39, 37, 37);
     padding: 20px;
+    margin-top: 10px;
     color: white;
     display: inline-block;
     text-align: center;
