@@ -107,7 +107,7 @@ div{
 }
 img:hover {
   opacity: 0.5;
-  filter: alpha(opacity=50); 
+  filter: alpha(opacity=40); 
 }
 .dropdown {
   position: relative;
@@ -120,7 +120,7 @@ img:hover {
   background-color: #111010;
   min-width: 350px;
 
-  box-shadow: 30px 50px 70px 90px rgba(3, 7, 231, 0.2);
+  box-shadow: 20px 50px 70px 90px rgb(238, 231, 219);
   z-index: 1;
 }
 
@@ -180,7 +180,7 @@ input[type=text] {
   transition: width 0.4s ease-in-out;
 }
 input[type=text]:focus {
-  width: 180%;
+  width: 150%;
 }
 .Tabela{
   height: 10px;
@@ -253,13 +253,20 @@ a:active {
 
 }
 .B{
-  background: wheat;
+  color:white;
+  text:white;
+  background: black;
   margin-left:120px;
   width: 90%;
   
 }
 .VI{
-  border: 7px solid  wheat;
+
+  border: 10px solid black;
+  padding: 15px;
+  border-image-repeat: round;
+  border-image-slice: 40;
+  border-image-width: 10px;
 }
 img {
   animation-duration: 3s;
