@@ -1,5 +1,3 @@
-
-
 h1
 {
     text-align: center;
@@ -8,7 +6,6 @@ h1
     font-size: 40px;
     padding-top: 30px;
 }
-
 canvas {
   border:1px solid #d3d3d3;
   background-color:rgb(214, 208, 208);
@@ -16,9 +13,6 @@ canvas {
   float: right;
 
 }
-
-
-
 body {
     background: #eee;
     color: #444;
@@ -75,9 +69,6 @@ body {
       li:last-child {
         border-bottom: none;
       }
-     
-  
-  
   .checked {
     color:green;
   }
@@ -94,14 +85,6 @@ body {
           color: red;
           text-align: right;
         }
-
-
-
-
-
-
-
-
 .segment-three a
   {
      background-color: red;
@@ -124,7 +107,7 @@ footer
     width: 100%;
     background-color:rgb(39, 37, 37);
     padding: 20px;
-    margin-top: 10px;
+    margin-top: 279px;
     color: white;
     display: inline-block;
     text-align: center;
