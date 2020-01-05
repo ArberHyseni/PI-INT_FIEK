@@ -8,22 +8,30 @@
         <script src="dynamic.js"></script>
         <meta charset="UTF-8">
     </head>
-    <body>
+    <body onload="startGame()">
+      
+      <div style="text-align:center;width:200px; float: right; padding-top: 80px;">
+        <p>Leviz katrorin duke shtypur butonat</br></p>
+        <button onclick="moveup()">UP</button><br><br>
+        <button onclick="moveleft()">LEFT</button>
+        <button onclick="moveright()">RIGHT</button><br><br>
+        <button onclick="movedown()">DOWN</button>
+        
+      </div>
+   
+
 
             <h1>Ez mode</h1>
             <h4>Cilet filma deshironi ti shikoni?</h4>
-            
             <div class="container">
-              
               <form  action="#">
                 <input type="text" name="item" id="item" />
             </form>  
             <ul id="list"></ul>
-            
             </div>
-            
+
             <script>
-            (function(){
+              (function(){
               
               var list = document.querySelector('#list'),
                   form = document.querySelector('form'),
@@ -64,11 +72,7 @@
             </script>
 
 
-
-
-
-
-        <footer>
+        <footer id="footeri">
             <section class="footer-top">        
                         <section class="col-md-3 col-sm-6 col-xs-12 segment-three">
                             <p>

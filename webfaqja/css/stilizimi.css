@@ -1,6 +1,6 @@
 body 
 {
-    background-color: #333;
+    background-color:rgb(94, 89, 89);
     padding: 0px 100px 0px 100px;
     
 }
@@ -11,7 +11,7 @@ body
     
     font-family: "Times New Roman", serif;
     font-size: 40px;
-    color: whitesmoke;
+    color: black;
     text-align: left;
     padding: 40px 40px 40px 0px;
 }
@@ -34,7 +34,7 @@ ul li
 ul li a
 {
     text-decoration: none;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 15px;
     display: block;
@@ -72,7 +72,7 @@ ul li:hover ul
     left: 85%;
     top: 14%;
     transform: translate(-50%,-50%);
-    background-color: orangered;
+    background-color: rgb(68, 43, 35);
     height: 45px;
     border-radius: 40px;
     padding: 10px; 
@@ -80,12 +80,12 @@ ul li:hover ul
 
 .search-buton
 {
-    color:#333;
+    color:orangered;
     float: right;
     width: 22px;
     height: 22px;
     border-radius: 50%;
-    background: orangered;
+    background: rgb(68, 43, 35);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,6 +110,7 @@ ul li:hover ul
 
 .search-box:hover > .search-text
 {
+ 
     width: 220px;
     padding: 0 6px;
     bottom: 0;
@@ -228,7 +229,7 @@ div.gallery {
   footer 
   {
       width: 100%;
-      background-color:rgb(39, 37, 37);
+      background-color:#272525;
       padding: 20px;
       color: white;
       display: inline-block;
