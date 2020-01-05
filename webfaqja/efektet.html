@@ -78,7 +78,34 @@
   <p id="p01" style="padding-top: 5px;" ></p>
 </div>
 
-        <footer id="footeri">
+
+<script>
+  function allowDrop(ev) {
+    ev.preventDefault();
+  }
+  
+  function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+  
+  function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+  }
+  </script>
+
+<h2 style="padding-left: 130px; text-align: center;">Drag dhe Drop</h2>
+<p style="padding-left: 130px; text-align: center;">Zvarrit fotografine ndermjet dy div-ave.</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-left: 130px;">
+  <img src="images\nike.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="100%" height="100%" >
+</div>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-left: 130px;"></div>
+
+
+        <footer >
             <section class="footer-top">        
                         <section class="col-md-3 col-sm-6 col-xs-12 segment-three">
                             <p>

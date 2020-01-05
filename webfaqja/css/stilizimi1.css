@@ -111,13 +111,21 @@ body {
 footer 
 {
     width: 100%;
+    height: 100px;
     background-color:rgb(39, 37, 37);
-    padding: 20px;
-    margin-top: 279px;
+    padding: 10px;
+    margin-top: 50px;
     color: white;
     display: inline-block;
     text-align: center;
     border-top: 1px solid grey;
-  
+}
 
+#div1, #div2 {
+  float: left;
+  width: 39%;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
 }
