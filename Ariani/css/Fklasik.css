@@ -19,12 +19,10 @@ body
 header, footer
 {
   text-align: center;
-  color: #f3f3f3;
-  background-color: #FAFAFA;
-  margin: 0em 1em 0.25em 9em;
-  margin-top:300%;
-  width: 70%;
-  
+  color: wheat;
+  background-color: #fff;
+  margin: 0em 4em 0.25em 4em;
+  margin-top:400%;
  
 }
 .Seri{
@@ -38,11 +36,12 @@ header, footer
   border: 7px solid black;
   border-radius: 20px;
  }
- table, th, tr {
+ table, tr {
 
   border: 5px solid black;
   margin-left: 50px;
   background-color: black ;
+  
    
   
   
@@ -122,7 +121,7 @@ img:hover {
   background-color: #111010;
   min-width: 350px;
 
-  box-shadow: 20px 50px 70px 90px rgb(238, 231, 219);
+  box-shadow: 20px 50px 70px 90px rgb(247, 238, 224);
   z-index: 1;
 }
 
@@ -143,7 +142,7 @@ textarea {
   padding: 12px 20px;
   box-sizing: border-box;
   border: 3px solid black;
-  border-radius: 4px;
+  border-radius: 5px;
   background-color: white;
   font-size: 16px;
   resize: none;
@@ -178,7 +177,6 @@ input[type=text] {
   background-position: 10px 10px; 
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
-  -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
 input[type=text]:focus {
@@ -256,7 +254,7 @@ a:active {
 }
 .B{
   color:white;
-  text:white;
+ 
   background: black;
   margin-left:120px;
   width: 90%;
@@ -306,13 +304,19 @@ img {
   width: 250px;
   margin-bottom: 50%;
 }
+
+
 .square:hover {
   transform: scale(2);
 }
+
+
 .K{
    border: 0px solid black;
 
 }
+
+
 footer 
   {
       width: 100%;
