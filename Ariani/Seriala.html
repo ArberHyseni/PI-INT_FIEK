@@ -9,10 +9,8 @@
 </head>
     
     <div onmouseover="mOver(this)" onmouseout="mOut(this)"
-            style="background-color:black;height:20px;width:1100px; padding:30px;font-size:230%; border: 8px solid #ffffff; vertical-align: middle; line-height: 20px;
-            border-radius: 40px; color:#ffffff; text-align: center;">
-            
-            Seriala</div>
+            style="background-color:black; height:20px; width:1100px; padding:30px; font-size:230%; border: 8px solid #ffffff; vertical-align: middle; line-height: 20px;
+            border-radius: 40px; color:#ffffff; text-align: center;"> Seriala</div>
             
             <script>
             function mOver(obj) {
@@ -29,7 +27,7 @@
             <p id="test2"><b class='Seri' style="font-size: 1.8em;">Serialet</b></p>
             <i>TV/Filma</i>
         </header>
-       <table cellspacing="70">
+       <table cellspacing="100">
         </div>
      
           <tr >
@@ -124,9 +122,9 @@
       <button class="B" onclick="makeSmall()">Small</button>
       <button class="B" onclick="makeNormal()">Normal</button>
       <br><br>
-      <video class="VI" id="video1" width="450">
+      <video class="VI" id="video1" width="450" controls>
         <source src="HBO Ballers Official Trailer.mp4" type="video/mp4">
-        <source src="Facebook.png" type="video/ogg">
+        <source src="HBO Ballers Official Trailer.ogg" type="video/ogg">
       </video>
     </div> 
     <script> 
@@ -148,7 +146,7 @@
       } 
       
       function makeNormal() { 
-          myVideo.width = 420; 
+          myVideo.width = 450; 
       } 
       </script> 
 

@@ -70,12 +70,8 @@ p{
     padding: 25px;
     border: 5px solid  black ;
     margin: 0;
-    background-image:url("123");
-    background-repeat: no-repeat;
-    -ms-transform: skew(20deg); 
-    -webkit-transform: skew(20deg); 
-     transform: skew(0deg); 
-   margin-left:40px;
+    transform: skew(0deg); 
+    margin-left:40px;
   
 }
 .Tel{

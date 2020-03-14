@@ -38,15 +38,13 @@ ul li a
     text-align: center;
     padding: 14px 15px;
     display: block;
-
 }
 
 ul li a:hover
 {
     color: red;
     transition: 2s;
-    -webkit-transform: rotate(360deg);
-    
+    transform: rotate(360deg);
 }
 
 ul li ul
@@ -62,16 +60,16 @@ ul li:hover ul
 {
     color:red;
     display: block;
-
+    padding-right: 100px;
 }
 
 
 .search-box
 {
     position: absolute;
-    left: 85%;
-    top: 14%;
-    transform: translate(-50%,-50%);
+    left: 93%;
+    top: 10%;
+    transform: translate(-100%,0%);
     background-color: rgb(68, 43, 35);
     height: 45px;
     border-radius: 40px;
@@ -139,7 +137,7 @@ ul li:hover ul
 
 header
 {
-   padding-bottom: 100px;
+   padding-bottom: 82px;
 }
 
 div
@@ -165,7 +163,7 @@ div.gallery {
   }
 
   div.gallery img:hover {
-    box-shadow:0 0 40px orangered;
+    box-shadow:0px 0px 40px orangered;
 
   }
   
