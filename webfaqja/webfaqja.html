@@ -13,11 +13,7 @@
                 position: static;
                 right: 0;
             }
-            .dropdown 
-            {
-                position: relative;
-                display: inline;
-            }
+           
         </style>
     </head>
 
@@ -66,12 +62,13 @@ $(function() {
 </header>
 
 
+
 <h3 id="fade" class="h3">FILMAT AKSION</h3>
 
 <div id="aksion" class="responsive">
     <div class="gallery">
-      <a target="_blank" href="images\1.jpg">
-        <img src="images\1.jpg" width="300" height="200">
+      <a target="_blank" href="images\1.png">
+        <img src="images\1.png" width="300" height="200">
       </a>
       <div class="desc">Black and Blue</div>
     </div>
@@ -79,8 +76,8 @@ $(function() {
   
   <div class="responsive">
     <div class="gallery">
-      <a target="_blank" href="images\2.jpg">
-        <img src="images\2.jpg" width="300" height="200">
+      <a target="_blank" href="images\2.png">
+        <img src="images\2.png" width="300" height="200">
       </a>
       <div class="desc">IP Man 4</div>
     </div>
@@ -140,7 +137,6 @@ $(function() {
     </div>
 </div>
 </div>
-
 
 
 <h3 class="h3">FILMAT THRILLER</h3>
@@ -215,7 +211,6 @@ $(function() {
       <div class="desc">Joker</div>
     </div>
 </div>
-
 
 
 <h3 class="h3">FILMAT HORROR</h3>
@@ -293,7 +288,6 @@ $(function() {
 </div>
 
 
-
 <h3 class="h3">FILMAT KOMEDI</h3>
 <div id="komedi" class="responsive">
     <div class="gallery">
@@ -367,7 +361,6 @@ $(function() {
     </div>
 </div>
 </div>
-
 
 
 <h3 class="h3">FILMAT DRAME</h3>
@@ -449,7 +442,7 @@ $(function() {
   <script>
 
 $(function() {
-          $('#footeri').on('mouseover', function() {
+          $('#footeri').on('click', function() {
             $('#footeri').slideToggle(5000).slideToggle(5000);
           });
         });
