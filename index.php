@@ -37,6 +37,16 @@
             <a>Faqja Kryesore</a>
           </div>  
           <p class="c23">KS Critics</p>
+          <?php
+          echo substr("KS Critics", -7);
+          echo "\n";
+          echo substr("KS Critics", 0, 3);
+          ?>
+          <p></p>
+          <?php
+          echo "Today is " . date("Y/m/d") . "<br>";
+          echo "The time is " . date("h:i:sa");
+          ?>
           </nav>
          </header>
          <article id="main">
@@ -62,7 +72,19 @@
                  Lor separat existentie es un myth. 
                  Por scientie, musica, sport etc, litot Europa usa li sam vocabular.
                  Li lingues differe solmen in li grammatica, 
-                 li pronunciation e li plu commun vocabules</p></div>
+                 li pronunciation e li plu commun vocabules</p>
+                 <?php
+                  $stringu = "Angleso it va semblar un simplificat Angles,
+                  quam un skeptic Cambridge amico dit me que Occidental es.
+                  Li Europan lingues es membres del sam familie.
+                  Lor separat existentie es un myth. 
+                  Por scientie, musica, sport etc, litot Europa usa li sam vocabular.
+                  Li lingues differe solmen in li grammatica, 
+                  li pronunciation e li plu commun vocabules";
+
+                  echo strlen($stringu);
+                 ?>
+                 </div>
               <div  id="box1"><img class= "shadow"src="img/Schindlers.jpg" alt="Portrait"/><p><br>Schindlers List</p><br><a id="fotot" href="">Kliko per me shume ></a></div>
               <div id="box2"><img class= "shadow" src="img/shawreduce.jpg" alt="Portrait"/><p><br>The Shawshank Redemption</p><br><a id="fotot" href="">Kliko per me shume ></a></div>  
               <div id="box3"><img class= "shadow" src="img/pianistreduce.jpg" alt="Portrait"/><p><br>The Pianist</p><br><a id="fotot" href="">Kliko per me shume ></a></div>
@@ -105,6 +127,15 @@
             <h4>Postuar nga: <i>Shpend Ahmeti</i></h4>
             <p>Filmi Memento eshte nje nder filmat me te mire qe e kam pare ndonjehere. E rekomandoj per te gjithe.<br><a href="">Kliko per me shume</a></p> 
             <h4>Postuar nga: <i>Dardan Berisha</i></h4>
+            <?php
+            $mbiemri = array("Shpend"=>"Ahmeti", "Dardan"=>"Berisha");
+            echo "<h4>Postuar nga: Dardan ".$mbiemri['Dardan']."</h4>";
+            ksort($mbiemri);
+            foreach($mbiemri as $x => $x_value) {
+              echo "Key=" . $x . ", Value=" . $x_value;
+              echo "<br>";
+            }
+            ?>
             <p>Film me tematike interesante por jo dicka e jashtezakonshme.<br><br><a href="">Kliko per me shume</a></p>
           </div>
           <div class="twitter">
