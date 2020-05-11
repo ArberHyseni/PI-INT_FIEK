@@ -22,7 +22,7 @@
           <nav class="nav2">
           <div class="navbar">
             <a href="#">Rreth ne</a>
-            <a href="./projekti/Projekti.html">Fakte per filma</a>
+            <a href="./projekti/Projekti.php">Fakte per filma</a>
             <a href="./webfaqja/webfaqja.html">Filmat</a>
           <div class="dropdown">
               <button class="dropbtn">Me te miret
