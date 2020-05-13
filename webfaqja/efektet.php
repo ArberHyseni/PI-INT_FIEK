@@ -7,6 +7,14 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="dynamic.js"></script>
         <meta charset="UTF-8">
+
+        <style>
+            .error
+            {
+              color: red;
+              font-size: 10px;
+            }
+        </style>
     </head>
     <body onload="startGame()">
       
@@ -77,12 +85,54 @@
   <button type="button" onclick="myFunction()" style="margin-top: 5px;">Testo hyrjen</button>
   <p id="p01" style="padding-top: 5px;" ></p>
 </div>
+<p></p>
+<div>
+<?php
 
-          <?php
-          echo "Today is " . date("Y/m/d") . "<br>";
-          echo "The time is " . date("h:i:sa");
-          ?>
+$usernameError = "";
+$passwordError = "";
 
+function Validate( $data)
+{
+  $data = trim( $data );
+  $data = stripslashes( $data );
+  $data = htmlspecialchars( $data );
+
+  return $data;
+}
+
+if ( $_SERVER["REQUEST_METHOD"] == "POST")
+{
+      $usernameVar = Validate( $_POST["username"] );
+      $passwordVar = Validate( $_POST["password"] );
+
+      if ( empty( $_POST["username"] ) )
+      {
+        $usernameError = "Username is empty";
+      }
+      else
+      {
+        if ( !preg_match( "/^[a-zA-Z ]*$/", $usernameVar ) )
+        {
+          $usernameError = "Only letters and whitespace are allowed.";
+        }
+      }
+      if ( empty( $_POST["password"] ) )
+      {
+        $passwordError = "Password is empty";
+      }
+}
+
+?>
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="POST" class="stili">
+          Username: <input type="text" name="username" style="width: 19%; padding-bottom: 5px;"/>
+          <div class="error"><?php echo $usernameError; ?></div>
+          Password: <input type="password" name="password" style="width: 19%; padding-bottom: 5px;"/>
+          <div class ="error"><?php echo $passwordError; ?></div>
+
+          <input type="submit" style="width: 10%; padding-bottom: 3px;" />
+</form>
+</div>
 <script>
   function allowDrop(ev) {
     ev.preventDefault();
@@ -107,7 +157,12 @@
 </div>
 
 <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-left: 130px;"></div>
-
+          <div class="stili">
+          <?php
+          echo "Today is " . date("Y/m/d") . "<br>";
+          echo "The time is " . date("h:i:sa");
+          ?>
+          </div>
 
         <footer >
             <section class="footer-top">        
