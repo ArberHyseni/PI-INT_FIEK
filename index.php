@@ -42,11 +42,7 @@
           echo "\n";
           echo substr("KS Critics", 0, 3);
           ?>
-          <p></p>
-          <?php
-          echo "Today is " . date("Y/m/d") . "<br>";
-          echo "The time is " . date("h:i:sa");
-          ?>
+
           </nav>
          </header>
          <article id="main">

@@ -78,6 +78,10 @@
   <p id="p01" style="padding-top: 5px;" ></p>
 </div>
 
+          <?php
+          echo "Today is " . date("Y/m/d") . "<br>";
+          echo "The time is " . date("h:i:sa");
+          ?>
 
 <script>
   function allowDrop(ev) {
