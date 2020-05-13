@@ -12,7 +12,7 @@
           <nav id="topnav">
               <ul>
                 <li><a href="signup.html">Sign Up |</a></li>
-                <li><a href="#">Login |</a></li>
+                <li><a href="login.php">Login |</a></li>
                 <li><a href="#">RSS Feeds |</a></li>
                 <li><a href="#">Archives </a></li>
               <input type="text" class="input_box" name="searchbar">

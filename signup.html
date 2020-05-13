@@ -25,36 +25,33 @@
   </style>
     </head>
     <body>
-      <form action="" method="post">
+      <form action="GetSignUpValues.php" method="post">
         <h1>Sign Up</h1>
         <fieldset>
           <legend><span class="numri">1</span>Te dhenat e juaja</legend>
           <label for="name">Emri</label>
-          <input type="text" id="name" >          
+          <input type="text" id="name" name="Name">          
           <label for="mail">Emaili:</label>
-          <input type="email" id="mail" >
+          <input type="email" id="mail" name="Email">
           
           <label for="password">Password:</label>
-          <input type="password" id="password">
+          <input type="password" id="password" name="Password">
           
           <label>Mosha:</label>
-          <input type="radio" id="mosha1" >
+          <input type="radio" id="mosha1" name="Age" value="Mbi 13"/>
           <label for="mosha1" class="poq1">Mbi 13</label><br>
-          <input type="radio" id="mosha2"  >
+          <input type="radio" id="mosha2"  name="Age" value="13 ose me pak"/>
           <label for="mosha2" class="poq1">13 ose me pak</label>
         </fieldset>
         
-        
-       
-        </select>
-        
-          <label>Per cfare interesoheni me shume:</label>
-          <input type="checkbox" id="filma" ><label class="poq1" for="development">Filma</label><br>
-            <input type="checkbox" id="seriale" ><label class="poq1" for="design">Seriale</label><br>
-          <input type="checkbox" id="dyjat"  ><label class="poq1" for="dyjat">Filma dhe Seriale</label>
-        
+        <fieldset>
+          <label> Per cfare interesoheni me shume:</label>
+          <input type="checkbox" name="Preferences[]" id="filma" value="Filma"/><label class="poq1" for="filma">Filma</label><br>
+          <input type="checkbox" name="Preferences[]" id="seriale" value="Seriale"/><label class="poq1" for="seriale">Seriale</label><br>
+          <input type="checkbox" name="Preferences[]" id="dyjat" value="Asnjeren"/><label class="poq1" for="dyjat">Asnjeren</label>
         </fieldset>
-        <button type="submit">Sign Up</button>
+
+        <button type="submit" name="Submit">Sign Up</button>
       </form><br>
       <div id="map" class="map"></div>
       
