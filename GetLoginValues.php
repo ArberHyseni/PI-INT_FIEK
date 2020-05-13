@@ -1,0 +1,5 @@
+<?
+
+require("dbconfig.php");
+
+?>

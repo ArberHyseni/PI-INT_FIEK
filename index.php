@@ -12,7 +12,7 @@
           <nav id="topnav">
               <ul>
                 <li><a href="signup.html">Sign Up |</a></li>
-                <li><a href="#">Login |</a></li>
+                <li><a href="login.php">Login |</a></li>
                 <li><a href="#">RSS Feeds |</a></li>
                 <li><a href="#">Archives </a></li>
               <input type="text" class="input_box" name="searchbar">
@@ -22,7 +22,7 @@
           <nav class="nav2">
           <div class="navbar">
             <a href="#">Rreth ne</a>
-            <a href="./projekti/Projekti.html">Fakte per filma</a>
+            <a href="./projekti/Projekti.php">Fakte per filma</a>
             <a href="./webfaqja/webfaqja.html">Filmat</a>
           <div class="dropdown">
               <button class="dropbtn">Me te miret
