@@ -38,9 +38,9 @@
           </div>  
           <p class="c23">KS Critics</p>
           <?php
-          echo substr("KS Critics", -7);
+          echo substr('KS Critics', -7);
           echo "\n";
-          echo substr("KS Critics", 0, 3);
+          echo substr('KS Critics', 0, 3);
           ?>
 
           </nav>

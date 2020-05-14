@@ -31,7 +31,7 @@
 
         //Run parameters inside database
         mysqli_stmt_execute($stmt);
-        $result = mysqli_stmt_get_result($stmt);
+        mysqli_stmt_store_result($stmt);
 
         //Get numbers of row
         $num = mysqli_stmt_num_rows($stmt);
@@ -50,6 +50,7 @@
 
             } else {
 
+                //sssi stands for string, string, string, integer
                 mysqli_stmt_bind_param($stmt, "sssi", $name, $email, $pass, $radio_id);
                 mysqli_stmt_execute($stmt);
 
@@ -70,7 +71,7 @@
                             echo "SQL statement ka deshtuar";
             
                         } else {
-                            
+
                             $i = $i + 1;
                             mysqli_stmt_bind_param($stmt, "si", $email, $i);
                             mysqli_stmt_execute($stmt);

@@ -5,7 +5,7 @@
 	<title> A title for the document </title>
 	<meta charset = "utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sign Up Form</title>
+        <title>Login Form</title>
         <link rel="stylesheet" href="css/reset.css">
         <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/signup.css">
@@ -15,6 +15,7 @@
   crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/build/ol.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/css/ol.css" type="text/css">
+  
   <style>
     .map {
       height: 400px;
@@ -28,20 +29,32 @@
       <form action="GetLoginValues.php" method="post">
         <h1>Login</h1>
         <fieldset>    
-          <label for="mail">Emaili:</label>
+          <label for="mail">Email:</label>
           <input type="email" id="mail" name="Email">
           <label for="password">Password:</label>
           <input type="password" id="password" name="Password">
         </fieldset>
             
         <fieldset>
-            <input type="checkbox" name="Remember" id="filma" ><label class="poq1" for="filma">Remember me</label>
+            <input type="checkbox" name="Remember[]" id="filma" value="Remember me"/><label class="poq1" for="filma">Remember me</label>
         </fieldset>
-        <button type="submit" name="Submit">Login</button>
+        <button type="submit" name="Login" value="Login">Login</button>
       </form><br>
       <div id="map" class="map"></div>
 
     </body>
+
+  <?php
+  
+  if (isset($_COOKIE['Email'])) {
+    $email = $_COOKIE['Email'];
+
+    echo "<script> 
+        document.getElementById('mail').value = '$email';
+          </script>";
+  }
+
+  ?>
 
     <script> 
     //time color changing background
