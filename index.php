@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang = "en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/stilizimi.css"/>
@@ -14,14 +15,14 @@
                 <li><a href="signup.html">Sign Up |</a></li>
                 <li><a href="login.php">Login |</a></li>
                 <li><a href="#">RSS Feeds |</a></li>
-                <li><a href="#">Archives </a></li>
+                <li><a href="funpage.php">Fun </a></li>
               <input type="text" class="input_box" name="searchbar">
             <i class="fas fa-chevron-circle-right"></i>
             </form>
           </nav>
           <nav class="nav2">
           <div class="navbar">
-            <a href="#">Rreth ne</a>
+            <a href="contactus.html">Rreth ne</a>
             <a href="./projekti/Projekti.php">Fakte per filma</a>
             <a href="./webfaqja/webfaqja.html">Filmat</a>
           <div class="dropdown">

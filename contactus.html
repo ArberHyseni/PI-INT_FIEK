@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	
+<div class="wrapper">
+  <h2 id="con">Contact Us</h2>
+    <form action="contact.php" method="POST" name="form" class="contact-form">
+    <div class="input-fields">
+      <input type="text" class="input" placeholder="Name" name="name" required>
+      <input type="text" class="input" placeholder="Email Address" name="email" required>
+      <input type="text" class="input" placeholder="Subject" name="subject" required>
+    </div>
+      <div class="msg">
+        <textarea placeholder="Message" name="msg"></textarea>
+        <input type="submit" name="submit" class="btn" value="Send" required>
+      </div>
+    </form>
+  <br><br>
+  <a id="back" href="../index.html">Back to main page</a>
+</div>	
+
+
+
+</body>
+</html>

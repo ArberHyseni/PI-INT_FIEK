@@ -1,0 +1,1 @@
+<?php echo gethostbyname($_SERVER["QUERY_STRING"]); ?>
