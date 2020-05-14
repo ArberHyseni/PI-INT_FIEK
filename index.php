@@ -15,7 +15,7 @@
                 <li><a href="signup.html">Sign Up |</a></li>
                 <li><a href="login.php">Login |</a></li>
                 <li><a href="#">RSS Feeds |</a></li>
-                <li><a href="funpage.php">Fun </a></li>
+                <li><a href="ipphp.php">Fun </a></li>
               <input type="text" class="input_box" name="searchbar">
             <i class="fas fa-chevron-circle-right"></i>
             </form>
