@@ -45,7 +45,7 @@ if (!mysqli_stmt_prepare($stmt, $s)) {
     
             } else {
 
-                $s = " SELECT Email, Pass FROM user WHERE Email = ? AND Pass = ?; ";
+                $s = " SELECT Email, Pass FROM user WHERE Email = ?; ";
 
                 if (!mysqli_stmt_prepare($stmt, $s)) {
 
@@ -54,7 +54,7 @@ if (!mysqli_stmt_prepare($stmt, $s)) {
                 } else {
 
                     mysqli_stmt_prepare($stmt, $s);
-                    mysqli_stmt_bind_param($stmt, "ss", $email, $pass);
+                    mysqli_stmt_bind_param($stmt, "s", $email);
                     mysqli_stmt_execute($stmt);
 
                     //get email and pass from database and store to emailDB and pasDB
@@ -63,7 +63,7 @@ if (!mysqli_stmt_prepare($stmt, $s)) {
 
     
                     //check for correct login
-                    if ($emailDB == $email and $passDB == $pass) {
+                    if ($emailDB == $email and password_verify($pass, $passDB)) {
         
                         //check for remember click
                         if (isset($_POST['Remember'])) {
@@ -79,7 +79,7 @@ if (!mysqli_stmt_prepare($stmt, $s)) {
                         //redirect to another page
                         header("location: Welcome.php");
     
-                } else {
+                    } else {
     
                     echo "Email or Password is Invalid.<br> Click here to <a href='login.php'>try again</a>";
     

@@ -6,7 +6,9 @@
     //get values 
     $name = $_POST['Name'];
     $email = $_POST['Email'];
-    $pass = $_POST['Password'];         
+    $pass = $_POST['Password']; 
+    //hash pasword
+    $pass = password_hash($pass, PASSWORD_DEFAULT);        
     $age = $_POST['Age']; 
     $preferences = $_POST['Preferences'];
 
