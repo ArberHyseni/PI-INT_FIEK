@@ -2,12 +2,11 @@
 
     //make procedural conn to database
     require("dbconfig.php");
-    function test_input($data) {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
-      }
+    function test_input($start) {
+        $start = trim(htmlspecialchars($start));
+        $start = stripslashes($start);
+        return $start;
+    }
     //get values 
     $name = test_input($_POST['Name']);
     $email = $_POST['Email'];

@@ -62,7 +62,6 @@ $currentTime = time();
 
 </head>
 <body>
-
     <div class="report-container">
         <h2><?php echo $data->name; ?> Weather</h2>
         <div class="time">
@@ -81,7 +80,5 @@ $currentTime = time();
             <div>Wind: <?php echo $data->wind->speed; ?> km/h</div>
         </div>
     </div>
-
-
 </body>
 </html>
