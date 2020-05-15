@@ -31,7 +31,7 @@
               </button>
               <div class="dropdown-content">
                 <a href="#">Fituesit e oskareve</a>
-                <a href="#">Top 250</a>
+                <a href="https://www.imdb.com/list/ls024149810/">Top 250</a>
                 <a href="#">Filmat me te ri</a>
               </div>
             </div>

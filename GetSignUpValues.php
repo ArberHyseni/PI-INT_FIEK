@@ -2,14 +2,19 @@
 
     //make procedural conn to database
     require("dbconfig.php");
-
+    function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+      }
     //get values 
-    $name = $_POST['Name'];
+    $name = test_input($_POST['Name']);
     $email = $_POST['Email'];
-    $pass = $_POST['Password']; 
+    $pass = test_input($_POST['Password']); 
     //hash pasword
     $pass = password_hash($pass, PASSWORD_DEFAULT);        
-    $age = $_POST['Age']; 
+    $age = test_input($_POST['Age']);
     $preferences = $_POST['Preferences'];
 
     //check for age 
@@ -24,7 +29,7 @@
     //Prepare the prepared statements
     if (!mysqli_stmt_prepare($stmt, $s)) {
 
-        echo "SQL statement ka deshtuar";
+        echo 'SQL statement ka deshtuar';
 
     } else {
 
@@ -87,6 +92,7 @@
             echo "Registration succesful";
         }
     }
+    
 
     //close prepared statement
     mysqli_stmt_close($stmt);
