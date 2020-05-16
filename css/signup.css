@@ -34,9 +34,8 @@ input[type="search"],
 input[type="tel"],
 input[type="time"],
 input[type="url"],
-textarea,
-select {
-    background: rgba(230, 91, 91, 0.603);
+textarea {
+    background: black;
     border: none;
     font-size: 16px;
     height: auto;
@@ -45,11 +44,11 @@ select {
     padding: 10px;
     width: 100%;
     background-color: #EAECEE;
-    color: #E74C3C;
+    color: black;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     margin-bottom: 30px;
   }
-}
+
 
 input[type="radio"],
 input[type="checkbox"] {
@@ -65,7 +64,7 @@ select {
 button {
   padding: 21px 36px 16px 21px;
   color: #FFF;
-  background-color: #E74C3C;
+  background-color: #DC143C;
   font-size: 18px;
   text-align: center;
   font-style: normal;
@@ -98,7 +97,7 @@ label.poq1 {
 }
 
 .numri {
-  background-color: #E74C3C;
+  background-color: #DC143C;
   color: #fff;
   height: 30px;
   width: 30px;
@@ -109,6 +108,13 @@ label.poq1 {
   text-align: center;
   text-shadow: 0 1px 0 rgba(243, 10, 10, 0.2);
   border-radius: 100%;
+}
+
+.catcherror {
+  padding-top: 2px;
+  margin-top: -15px;
+  color: red;
+
 }
 
 @media screen and (min-width: 480px) {

@@ -13,7 +13,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") { 
 
         //call a static function checkParameter to check values
-        $name = ValidationResult::checkParameter($_POST['Name'], '/^[A-Z][-a-zA-Z]+$/', 'Enter a valid name');   
+        $name = ValidationResult::checkParameter($_POST['Name'], '"^[a-zA-Z]*$"', 'Enter a valid name');   
         $email = ValidationResult::checkParameter($_POST['Email'], '/(.+)@([^\.].*)\.([a-z]{2,})/', 'Enter a valid email');   
         $pass = ValidationResult::checkParameter($_POST['Password'], '/^[a-zA-Z]\w{8,16}$/', 'Enter a password between 8-16 characters');
         $age = ValidationResult::NoCheckNeed($_POST['Age']);
@@ -61,22 +61,25 @@
           <legend><span class="numri">1</span>Te dhenat e juaja</legend>
 
           <label for="name">Emri</label>
-          <input type="text" id="name" name="Name" placeholder="enter name" required> 
           <span class="catcherror">
             <?php echo $name->getError_message(); ?> 
           </span>
+          <input type="text" id="name" name="Name" placeholder="enter name" required> 
+          
 
           <label for="mail">Emaili:</label>
-          <input type="email" id="mail" name="Email" placeholder="enter an email" required>
           <span>
             <?php echo $email->getError_message(); ?> 
           </span>
+          <input type="email" id="mail" name="Email" placeholder="enter an email" required>
+          
           
           <label for="password">Password:</label>
-          <input type="password" id="password" name="Password" placeholder="enter at least six characters"  required>
-          <span>
+          <span class="catcherror">
             <?php echo $pass->getError_message(); ?> 
           </span>
+          <input type="password" id="password" name="Password" placeholder="enter at least six characters"  required>
+          
           
           <label>Mosha:</label>
           <input type="radio" id="mosha1" name="Age" value="Mbi 13" required/>
