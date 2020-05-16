@@ -119,15 +119,6 @@
             <h4>Postuar nga: <i>Shpend Ahmeti</i></h4>
             <p>Filmi Memento eshte nje nder filmat me te mire qe e kam pare ndonjehere. E rekomandoj per te gjithe.<br><a href="">Kliko per me shume</a></p> 
             <h4>Postuar nga: <i>Dardan Berisha</i></h4>
-            <?php
-            $mbiemri = array("Shpend"=>"Ahmeti", "Dardan"=>"Berisha");
-            echo "<h4>Postuar nga: Dardan ".$mbiemri['Dardan']."</h4>";
-            ksort($mbiemri);
-            foreach($mbiemri as $x => $x_value) {
-              echo "Key=" . $x . ", Value=" . $x_value;
-              echo "<br>";
-            }
-            ?>
             <p>Film me tematike interesante por jo dicka e jashtezakonshme.<br><br><a href="">Kliko per me shume</a></p>
           </div>
           <div class="twitter">
