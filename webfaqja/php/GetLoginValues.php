@@ -17,11 +17,11 @@ if (!mysqli_stmt_prepare($stmt, $s)) {
 
 } else {
 
-    if (isset($_POST['Submit'])) {
+    if (isset($_POST['Login'])) {
 
         if (empty($_POST['Email']) || empty($_POST['Password'])) {
 
-            header("location: login.php");
+            header("location: /login.php");
 
         } else {
 

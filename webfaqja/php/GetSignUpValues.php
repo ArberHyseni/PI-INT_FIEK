@@ -9,29 +9,12 @@
     }
     //get values 
     $name = $_POST['Name'];
-
-
     $email = $_POST['Email'];
-
     $pass = $_POST['Password']; 
-
     //hash pasword
     $pass = password_hash($pass, PASSWORD_DEFAULT);        
     $age = $_POST['Age']; 
-
-    
-    
-    $preferences = array();
-
-    if (isset($_POST['Preferences'])) {
-
-        $preferences = $_POST['Preferences'];
-
-    } else {
-
-        $preferences[0] = "Asnjeren";
-
-    }
+    $preferences = $_POST['Preferences'];
 
     //check for age 
     $radio_id = ($age == 'Mbi 13') ? 1 : 2;
@@ -114,6 +97,6 @@
     mysqli_stmt_close($stmt);
 
     //close connection
-    mysqli_close($con); 
+    mysqli_close($con);    
 
 ?>
