@@ -381,6 +381,7 @@ function test_input($data) {
     
           <p id="dem"></p>
 
+
           <script>
             var fruitse = [];
             document.getElementById("dem").innerHTML = fruitse;
@@ -404,7 +405,7 @@ function test_input($data) {
       <br><br>
       <video class="VI" id="video1" width="450">
         <source src="HBO Ballers Official Trailer.mp4" type="video/mp4">
-        <source src="Facebook.png" type="video/ogg" >
+        <source src="Foto22.jpg" type="video/ogg" >
       </video>
     </div> 
     <script> 
