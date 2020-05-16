@@ -13,7 +13,7 @@
           <nav id="topnav">
               <ul>
                 <li><a href="signup.php">Sign Up |</a></li>
-                <li><a href="login.php">Login |</a></li>
+                <li><a href="./webfaqja/php/login.php">Login |</a></li>
                 <li><a href="#">RSS Feeds |</a></li>
                 <li><a href="ipphp.php">Fun </a></li>
               <input type="text" class="input_box" name="searchbar">
@@ -38,11 +38,6 @@
             <a>Faqja Kryesore</a>
           </div>  
           <p class="c23">KS Critics</p>
-          <?php
-          echo substr('KS Critics', -7);
-          echo "\n";
-          echo substr('KS Critics', 0, 3);
-          ?>
 
           </nav>
          </header>

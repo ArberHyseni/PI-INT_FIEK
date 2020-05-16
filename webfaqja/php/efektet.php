@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="eng">
     <head>
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/stilizimi1.css">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/stilizimi1.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="dynamic.js"></script>
+        <script src="../dynamic.js"></script>
         <meta charset="UTF-8">
 
         <style>
@@ -88,57 +88,9 @@
 <p></p>
 <div>
 
-<?php
 
-  $usernameError = "";
-  $passwordError = "";
-
-  function Validate( $data) {
-
-    $data = trim( $data );
-    $data = stripslashes( $data );
-    $data = htmlspecialchars( $data );
-
-    return $data;
-  }
-
-  if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-        $usernameVar = Validate( $_POST["username"] );
-        $passwordVar = Validate( $_POST["password"] );
-
-        if ( empty( $_POST["username"] ) ) {
-
-          $usernameError = "Username is empty";
-
-        } else {
-
-          if (!preg_match( "/^[a-zA-Z ]*$/", $usernameVar)) {
-
-            $usernameError = "Only letters and whitespace are allowed.";
-
-          }
-
-        }
-
-        if (empty( $_POST["password"])) {
-
-          $passwordError = "Password is empty";
-
-        }
-  }
-
-?>
-
-<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="POST" class="stili">
-          Username: <input type="text" name="username" style="width: 19%; padding-bottom: 5px;"/>
-          <div class="error"><?php echo $usernameError; ?></div>
-          Password: <input type="password" name="password" style="width: 19%; padding-bottom: 5px;"/>
-          <div class ="error"><?php echo $passwordError; ?></div>
-
-          <input type="submit" style="width: 10%; padding-bottom: 3px;" />
-</form>
 </div>
+
 
 <script>
   function allowDrop(ev) {
@@ -156,11 +108,12 @@
   }
   </script>
 
+
 <h2 style="padding-left: 130px; text-align: center;">Drag dhe Drop</h2>
 <p style="padding-left: 130px; text-align: center;">Zvarrit fotografine ndermjet dy div-ave.</p>
 
 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-left: 130px;">
-  <img src="images\nike.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="100%" height="100%" >
+  <img src="../images/nike.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="100%" height="100%" >
 </div>
 
 <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-left: 130px;"></div>
