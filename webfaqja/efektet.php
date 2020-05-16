@@ -15,6 +15,7 @@
               font-size: 10px;
             }
         </style>
+
     </head>
     <body onload="startGame()">
       
@@ -23,8 +24,7 @@
         <button onclick="moveup()">UP</button><br><br>
         <button onclick="moveleft()">LEFT</button>
         <button onclick="moveright()">RIGHT</button><br><br>
-        <button onclick="movedown()">DOWN</button>
-        
+        <button onclick="movedown()">DOWN</button> 
       </div>
    
 
@@ -87,43 +87,49 @@
 </div>
 <p></p>
 <div>
+
 <?php
 
-$usernameError = "";
-$passwordError = "";
+  $usernameError = "";
+  $passwordError = "";
 
-function Validate( $data)
-{
-  $data = trim( $data );
-  $data = stripslashes( $data );
-  $data = htmlspecialchars( $data );
+  function Validate( $data) {
 
-  return $data;
-}
+    $data = trim( $data );
+    $data = stripslashes( $data );
+    $data = htmlspecialchars( $data );
 
-if ( $_SERVER["REQUEST_METHOD"] == "POST")
-{
-      $usernameVar = Validate( $_POST["username"] );
-      $passwordVar = Validate( $_POST["password"] );
+    return $data;
+  }
 
-      if ( empty( $_POST["username"] ) )
-      {
-        $usernameError = "Username is empty";
-      }
-      else
-      {
-        if ( !preg_match( "/^[a-zA-Z ]*$/", $usernameVar ) )
-        {
-          $usernameError = "Only letters and whitespace are allowed.";
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+        $usernameVar = Validate( $_POST["username"] );
+        $passwordVar = Validate( $_POST["password"] );
+
+        if ( empty( $_POST["username"] ) ) {
+
+          $usernameError = "Username is empty";
+
+        } else {
+
+          if (!preg_match( "/^[a-zA-Z ]*$/", $usernameVar)) {
+
+            $usernameError = "Only letters and whitespace are allowed.";
+
+          }
+
         }
-      }
-      if ( empty( $_POST["password"] ) )
-      {
-        $passwordError = "Password is empty";
-      }
-}
+
+        if (empty( $_POST["password"])) {
+
+          $passwordError = "Password is empty";
+
+        }
+  }
 
 ?>
+
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="POST" class="stili">
           Username: <input type="text" name="username" style="width: 19%; padding-bottom: 5px;"/>
           <div class="error"><?php echo $usernameError; ?></div>
@@ -133,6 +139,7 @@ if ( $_SERVER["REQUEST_METHOD"] == "POST")
           <input type="submit" style="width: 10%; padding-bottom: 3px;" />
 </form>
 </div>
+
 <script>
   function allowDrop(ev) {
     ev.preventDefault();
@@ -158,25 +165,17 @@ if ( $_SERVER["REQUEST_METHOD"] == "POST")
 
 <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-left: 130px;"></div>
           <div class="stili">
+
           <?php
-          echo "Today is " . date("Y/m/d") . "<br>";
-          echo "The time is " . date("h:i:sa");
+            echo "Today is " . date("Y/m/d") . "<br>";
+            echo "The time is " . date("h:i:sa");
           ?>
+
           </div>
 
-        <footer >
-            <section class="footer-top">        
-                        <section class="col-md-3 col-sm-6 col-xs-12 segment-three">
-                            <p>
-                                Na ndiqni ne rrjetet sociale
-                            </p>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
-                            <p>Copyright &copy; - G22 Projekti n&euml; Internet</p>
-                        </section>
-                        </section>
-                        </footer>
+          <?php
+            include 'footer.php';
+          ?>
+
     </body>
 </html>

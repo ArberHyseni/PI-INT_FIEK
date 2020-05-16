@@ -17,7 +17,7 @@ if (!mysqli_stmt_prepare($stmt, $s)) {
 
 } else {
 
-    if (isset($_POST['Login'])) {
+    if (isset($_POST['Submit'])) {
 
         if (empty($_POST['Email']) || empty($_POST['Password'])) {
 

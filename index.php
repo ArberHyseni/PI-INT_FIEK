@@ -12,7 +12,7 @@
        <header>
           <nav id="topnav">
               <ul>
-                <li><a href="signup.html">Sign Up |</a></li>
+                <li><a href="signup.php">Sign Up |</a></li>
                 <li><a href="login.php">Login |</a></li>
                 <li><a href="#">RSS Feeds |</a></li>
                 <li><a href="ipphp.php">Fun </a></li>
@@ -24,7 +24,7 @@
           <div class="navbar">
             <a href="contactus.html">Rreth ne</a>
             <a href="./projekti/Projekti.php">Fakte per filma</a>
-            <a href="./webfaqja/webfaqja.html">Filmat</a>
+            <a href="./webfaqja/webfaqja.php">Filmat</a>
           <div class="dropdown">
               <button class="dropbtn">Me te miret
                 <i class="fa fa-caret-down"></i>
