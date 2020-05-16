@@ -17,8 +17,9 @@
         $email = ValidationResult::checkParameter($_POST['Email'], '/(.+)@([^\.].*)\.([a-z]{2,})/', 'Enter a valid email');   
         $pass = ValidationResult::checkParameter($_POST['Password'], '/^[a-zA-Z]\w{8,16}$/', 'Enter a password between 8-16 characters');
         $age = ValidationResult::NoCheckNeed($_POST['Age']);
+        if (isset($_POST['Preferences'])) {
         $preferences = ValidationResult::NoCheckNeed($_POST['Preferences']);
-
+        }
         // if no validation errors call another page   
         if ($name->is_valid() && $email->is_valid() && $pass->is_valid()) {      
           include ('./webfaqja/php/GetSignUpValues.php');
