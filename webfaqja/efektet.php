@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="eng">
     <head>
-        <link rel="stylesheet" href="../css/reset.css">
-        <link rel="stylesheet" href="../css/stilizimi1.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/stilizimi1.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="../dynamic.js"></script>
+        <script src="dynamic.js"></script>
         <meta charset="UTF-8">
 
         <style>
@@ -113,7 +113,7 @@
 <p style="padding-left: 130px; text-align: center;">Zvarrit fotografine ndermjet dy div-ave.</p>
 
 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-left: 130px;">
-  <img src="../images/nike.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="100%" height="100%" >
+  <img src="images/nike.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="100%" height="100%" >
 </div>
 
 <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-left: 130px;"></div>

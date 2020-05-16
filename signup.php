@@ -1,7 +1,7 @@
 
 <?php
 
-    include('./webfaqja/php/ValidationResult.class.php');
+    include('ValidationResult.class.php');
 
     // create default validation results 
     $name = new ValidationResult("", "", true); 
@@ -22,7 +22,7 @@
         }
         // if no validation errors call another page   
         if ($name->is_valid() && $email->is_valid() && $pass->is_valid()) {      
-          include ('./webfaqja/php/GetSignUpValues.php');
+          include ('GetSignUpValues.php');
           die();
         }
     }

@@ -26,7 +26,7 @@
   </style>
 </head>
     <body>
-      <form action="webfaqja/php/GetLoginValues.php" method="post">
+      <form action="GetLoginValues.php" method="post">
         <h1>Login</h1>
         <fieldset>    
           <label for="mail">Email:</label>

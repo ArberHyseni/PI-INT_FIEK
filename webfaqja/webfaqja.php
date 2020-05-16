@@ -49,7 +49,7 @@ $(function() {
     <ul class="pos">
      <li><a href="#tetjera" >TE TJERA</a>
     <ul>
-        <li><a href="php\efektet.php" target="_blank">ARGETOHU</a></li>
+        <li><a href="efektet.php" target="_blank">ARGETOHU</a></li>
         <li><a href="..\ArianiP\Seriala.php" target="_blank">SERIALE</a></li>
     </ul></li>
      <li><a href="#komedi">KOMEDI</a></li>
@@ -439,7 +439,7 @@ $(function() {
 
 <?php
 
-  include 'php\footer.php';
+  include 'footer.php';
 
 ?>
 
