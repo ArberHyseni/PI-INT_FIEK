@@ -21,7 +21,7 @@ if (!mysqli_stmt_prepare($stmt, $s)) {
 
         if (empty($_POST['Email']) || empty($_POST['Password'])) {
 
-            header("location: /login.php");
+            header("location: login.php");
 
         } else {
 
@@ -41,7 +41,7 @@ if (!mysqli_stmt_prepare($stmt, $s)) {
 
             if ($num < 1) {
 
-                echo "You are not registered. <br> Click <a href=signup.html>here</a> to register";
+                echo "You are not registered. <br> Click <a href=signup.php>here</a> to register";
     
             } else {
 
