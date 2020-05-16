@@ -62,7 +62,7 @@
 
           <label for="name">Emri</label>
           <input type="text" id="name" name="Name" placeholder="enter name" required> 
-          <span>
+          <span class="catcherror">
             <?php echo $name->getError_message(); ?> 
           </span>
 
