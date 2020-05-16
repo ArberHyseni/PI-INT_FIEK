@@ -366,7 +366,7 @@ function test_input($data) {
 </form>
 
 <br><br>
-<p style="color:black;" >Serialat me te shikuar <b><a href="http://localhost/PojektiPI/PHP/Ariani/Sss.php" target="_blank" style="color:red">Kliko ketu</a></b></p>
+<p style="color:black;" >Serialat me te shikuar <b><a href="http://localhost/PI_FIEK/ArianiP/Sss.php" target="_blank" style="color:red">Kliko ketu</a></b></p>
 
 <p style="color:black;">Per informata me te shumta<b ><a href="https://www.google.com/" target="_blank" style="color:red" >Kliko ketu</a></b></p>
     <div class="Tabela">
@@ -380,6 +380,7 @@ function test_input($data) {
           <button class="button" onclick="myFunctione()"  >Kerko</button>
     
           <p id="dem"></p>
+
 
           <script>
             var fruitse = [];
@@ -404,7 +405,7 @@ function test_input($data) {
       <br><br>
       <video class="VI" id="video1" width="450">
         <source src="HBO Ballers Official Trailer.mp4" type="video/mp4">
-        <source src="Facebook.png" type="video/ogg" >
+        <source src="Foto22.jpg" type="video/ogg" >
       </video>
     </div> 
     <script> 

@@ -20,7 +20,7 @@ function validate($start) {
 	//  the request is fine
 		if(isset($_POST['submit'])) {
             $name = $_POST['name'];
-            $email = $_POST['email'];
+            $email = emailV($_POST['email']);
             $subject = $_POST['subject'];
             $msg = $_POST['msg'];
             
@@ -35,7 +35,7 @@ function validate($start) {
                 $message = "Name: ".$name."\n"."Subject: ".$subject."\n"."Wrote the following: \n".$msg;
         
                 if (mail($to, $subject, $message, $fromwho)) {
-                    echo "<h1> Sent successfully! Thank you"."".$name."\n"."We will contact you the following days";
+                    echo "<h2> Sent successfully! Thank you"."".$name."\n"."We will contact you the following days</h2>";
                 } else {
                     echo "Oops! Something went wrong.";
                 }

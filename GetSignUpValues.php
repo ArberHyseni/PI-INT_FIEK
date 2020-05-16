@@ -2,7 +2,11 @@
 
     //make procedural conn to database
     require("dbconfig.php");
-
+    function test_input($start) {
+        $start = trim(htmlspecialchars($start));
+        $start = stripslashes($start);
+        return $start;
+    }
     //get values 
     $name = $_POST['Name'];
 
@@ -41,7 +45,7 @@
     //Prepare the prepared statements
     if (!mysqli_stmt_prepare($stmt, $s)) {
 
-        echo "SQL statement ka deshtuar";
+        echo 'SQL statement ka deshtuar';
 
     } else {
 
@@ -104,6 +108,7 @@
             echo "Registration succesful";
         }
     }
+    
 
     //close prepared statement
     mysqli_stmt_close($stmt);
