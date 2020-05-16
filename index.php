@@ -32,7 +32,7 @@
               <div class="dropdown-content">
                 <a href="#">Fituesit e oskareve</a>
                 <a href="https://www.imdb.com/list/ls024149810/">Top 250</a>
-                <a href="#">Filmat me te ri</a>
+                <a href="comment.php">Reviews</a>
               </div>
             </div>
             <a>Faqja Kryesore</a>
