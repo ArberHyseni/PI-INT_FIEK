@@ -366,7 +366,7 @@ function test_input($data) {
 </form>
 
 <br><br>
-<p style="color:black;" >Serialat me te shikuar <b><a href="http://localhost/PI_FIEK/ArianiP/Sss.php" target="_blank" style="color:red">Kliko ketu</a></b></p>
+<p style="color:black;" >Serialat me te shikuar <b><a href="Sss.php" target="_blank" style="color:red">Kliko ketu</a></b></p>
 
 <p style="color:black;">Per informata me te shumta<b ><a href="https://www.google.com/" target="_blank" style="color:red" >Kliko ketu</a></b></p>
     <div class="Tabela">
